@@ -2,7 +2,7 @@
 
 [![Version](https://img.shields.io/npm/v/@basitcodeenv/vue3-device-detect.svg)](https://www.npmjs.com/package/@basitcodeenv/vue3-device-detect)
 [![License](https://img.shields.io/npm/l/@basitcodeenv/vue3-device-detect.svg)](https://github.com/basitcodeenv/vue3-device-detect/blob/main/LICENSE)
-[![vue](https://img.shields.io/badge/vue-2.7.14-brightgreen.svg)](https://github.com/vuejs/vue)
+[![vue](https://img.shields.io/badge/vue-3.4.21-brightgreen.svg)](https://github.com/vuejs/vue)
 [![GitHub last commit](https://img.shields.io/github/last-commit/basitcodeenv/vue3-device-detect.svg)](https://github.com/basitcodeenv/vue3-device-detect)
 [![Downloads](https://img.shields.io/npm/dm/@basitcodeenv/vue3-device-detect.svg)](https://npmcharts.com/compare/@basitcodeenv/vue3-device-detect?minimal=true)
 
@@ -117,6 +117,7 @@ Properties:
 | isWindows        | boolean | The OS is `Windows`                     |
 | isWinPhone       | boolean | The OS is `Windows Phone`               |
 | isYandex         | boolean | Browser is `Yandex Browser`             |
+
 
 Functions:
 
