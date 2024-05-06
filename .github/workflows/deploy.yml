@@ -9,9 +9,14 @@ jobs:
     build-deploy:
         runs-on: ubuntu-latest
 
+        # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+        permissions:
+          pages: write      # to deploy to Pages
+          id-token: write   # to verify the deployment originates from an appropriate sourc
+
         steps:
             - name: Checkout 🛎️
-              uses: actions/checkout@master
+              uses: actions/checkout@v4
               with:
                   persist-credentials: false
 
@@ -23,9 +28,8 @@ jobs:
               env:
                   NODE_ENV: production
 
-            - name: Deploy to GH Pages 🚀
-              if: ${{ github.event_name != 'pull_request' }}
-              uses: peaceiris/actions-gh-pages@v3
+            - name: Deploy to GitHub Pages
+              uses: peaceiris/actions-gh-pages@v4
               with:
-                  github_token: ${{ secrets.GITHUB_TOKEN }}
-                  publish_dir: demo
+                github_token: ${{ secrets.GITHUB_TOKEN }}
+                publish_dir: ./demo
