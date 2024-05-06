@@ -1,0 +1,47 @@
+{
+  "name": "vue3-device-detect",
+  "version": "1.0.0",
+  "private": false,
+  "description": "A device detector plugin of Vue 3",
+  "keywords": [
+    "browser",
+    "detect",
+    "device",
+    "mobile",
+    "phone",
+    "tablet",
+    "useragent",
+    "vue"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "main": "./dist/vue3-device-detect.umd.min.js",
+  "module": "./dist/vue3-device-detect.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue3-device-detect.js",
+      "require": "./dist/vue3-device-detect.umd.cjs"
+    }
+  },
+  "types": "types/index.d.ts",
+  "files": [
+    "dist/vue3-device-detect.*",
+    "types/*.d.ts"
+  ],
+  "dependencies": {
+    "ua-parser-js": "^1.0.37",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@babel/types": "^7.24.5",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6"
+  }
+}

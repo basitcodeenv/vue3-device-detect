@@ -1,0 +1,12 @@
+{
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"moduleResolution": "node",
+		"outDir": "dist",
+		"removeComments": true,
+		"sourceMap": true,
+		"target": "esnext"
+	},
+	"include": ["lib/**/*.ts", "src/**/*.ts", "src/**/*.vue"],
+	"exclude": ["node_modules"]
+}
