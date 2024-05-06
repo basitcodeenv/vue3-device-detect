@@ -13,11 +13,15 @@
 		"useragent",
 		"vue"
 	],
+	"publishConfig": {
+		"access": "public"
+	},
 	"type": "module",
 	"license": "MIT",
 	"scripts": {
 		"dev": "vite",
-		"build": "vue-tsc && vite build",
+		"build": "vue-tsc && vite build --mode prod",
+		"demo:build": "vue-tsc && vite build --mode demo",
 		"preview": "vite preview"
 	},
 	"main": "./dist/vue3-device-detect.umd.min.js",
