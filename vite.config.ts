@@ -33,10 +33,13 @@ export default defineConfig(({ command, mode }) =>  {
 		};
 	} else {
 		return {
-			plugins: [vue()],
+			base: ASSET_URL,
+			plugins: [
+				vue(),
+			],
 			build: {
-				outDir: ASSET_URL + "demo"
-			}
+				outDir: "demo",
+			},
 		};
 	}
 })
