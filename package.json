@@ -1,6 +1,6 @@
 {
 	"name": "@basitcodeenv/vue3-device-detect",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"private": false,
 	"description": "A device detector plugin of Vue 3",
 	"keywords": [
@@ -28,6 +28,7 @@
 	"module": "./dist/vue3-device-detect.js",
 	"exports": {
 		".": {
+			"types": "./types/index.d.ts",
 			"import": "./dist/vue3-device-detect.js",
 			"require": "./dist/vue3-device-detect.umd.cjs"
 		}
