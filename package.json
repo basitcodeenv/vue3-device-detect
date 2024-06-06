@@ -1,6 +1,6 @@
 {
 	"name": "@basitcodeenv/vue3-device-detect",
-	"version": "1.0.2",
+	"version": "1.0.4",
 	"private": false,
 	"description": "A device detector plugin of Vue 3",
 	"keywords": [
